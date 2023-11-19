@@ -1,0 +1,78 @@
+@import "reset.css";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.centered {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: #23424a;
+  padding: 4em 1em;
+}
+
+.container {
+  color: white;
+}
+
+.text {
+  width: 55%;
+}
+
+.text h1 {
+  font-weight: 900;
+  margin-bottom: 0.25em;
+  font-size: 3rem;
+}
+
+.text p {
+  margin-bottom: 3.5em;
+  font-size: 1.313rem;
+}
+
+.container a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #23424a;
+  background-color: #38cfd9;
+  border-radius: 2em;
+  padding: 1em 1.5em;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+  gap: 3em;
+  margin: 3em auto;
+}
+
+.row h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
+
+.dark {
+  background: #136c72;
+  color: white;
+  padding: 1em;
+}
+
+.light {
+  background: white;
+  color: black;
+  padding: 1em;
+}
+
+.light h2 {
+  color: #87629a;
+}
+
+/* .light p {
+  color: black;
+} */
