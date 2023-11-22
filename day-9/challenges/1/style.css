@@ -1,91 +1,106 @@
-@import "reset.css";
+/*
+////// For this challenge ///////
 
-body {
-  font-family: "Roboto", sans-serif;
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.hero {
-  background-color: #23424a;
-  padding: 5em 0;
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
 }
 
 .container {
-  display: flex;
   width: 80%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  justify-content: space-between;
-}
-
-.hero__text {
-  color: white;
-  width: 60%;
-}
-
-.hero__text h1 {
-  margin-bottom: 0.5em;
-  font-size: 2.5rem;
-  font-weight: 900;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.5em;
-}
-
-.hero__text p {
-  margin-bottom: 3em;
-}
-
-.hero__text a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #23424a;
-  background-color: #38cfd9;
-  border-radius: 2em;
-  padding: 1em 2.5em;
-  margin-bottom: 0.5em;
-  display: inline-block;
 }
 
 .row {
+  /* display: flex => flex container */
   display: flex;
   justify-content: space-between;
-  padding: 3em 0;
-}
 
-.accent {
-  color: #136c72;
+  /* can't use yet */
+  gap: 100px;
 }
 
 .col {
-  padding: 2.5em;
+  /* these are now flex items */
+  width: 100%;
 }
 
-.secondary {
-  background-color: #136c72;
-  color: white;
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+  margin-bottom: 3em;
 }
 
-.row h2 {
+.hero__text {
+  width: 62%;
+}
+
+.hero__img {
+  width: 32%;
+  align-self: flex-start;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
   font-weight: 900;
-  font-size: 2.25rem;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
 }
 
-.vertical-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4em;
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+
+.primary-content {
+  width: 62%;
+}
+
+.sidebar {
+  width: 32%;
   text-align: center;
+  color: white;
+  background-color: #136c72;
+  padding: 0 1em;
 }
 
-.item h2 {
-  margin-bottom: 0.5em;
-}
-
-.info__text {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
+.section-title {
+  color: #136c72;
 }
