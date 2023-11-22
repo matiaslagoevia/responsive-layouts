@@ -75,8 +75,9 @@ header {
 }
 
 .nav__list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  gap: 1em;
+  padding: 0.125em 0;
   list-style: none;
 }
 
