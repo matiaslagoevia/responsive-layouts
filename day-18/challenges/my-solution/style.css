@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  text-align: center;
+  background-color: #f3eed9;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+}
+
+header p {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+}
+
+.container {
+  max-width: 1128px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-text {
+  width: 50%;
+}
+
+h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 3.75rem;
+  color: #824936;
+}
+
+h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(2) {
+  background-color: #222c2a;
+  color: white;
+}
+
+section:nth-child(3) {
+  background-color: #824936;
+  color: white;
+}
+
+section {
+  padding: 4em 0;
+}
+
+.col {
+  width: 46%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.light-accent {
+  color: #f3eed9;
+}
+
+.dark-accent {
+  color: #824936;
+}
+
+.centered {
+  text-align: center;
+}
