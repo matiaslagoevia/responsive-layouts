@@ -93,7 +93,7 @@ header {
 }
 
 .nav__link--button {
-  display: inline-block;
+  display: inline-block; /* apply padding so that the padding is included in its box */
   color: #136c72;
   background-color: white;
   padding: 0.5em 1em;
@@ -204,6 +204,28 @@ header {
     visibility: visible;
     display: flex;
     height: auto;
+    justify-content: space-between; /* space b/w the nav lists */
+    margin-top: 0; /* undo margin */
+    position: static; /* so the logo doesn't overlap */
+  }
+
+  .nav__list {
+    display: flex; /* horizontal direction */
+    gap: 1em; /* separate them a bit */
+  }
+
+  .nav__list--primary .nav__item + .nav__item,
+  .nav__link--button,
+  .nav__list + .nav__list {
+    margin-top: 0; /* undo top margins */
+  }
+
+  .nav__list--primary {
+    margin-left: 2em; /* separate the left list from the logo a bit */
+  }
+
+  .nav__link--button {
+    display: inline; /* undo inline-block display to have it align well to rest of links */
   }
 
   .row {
