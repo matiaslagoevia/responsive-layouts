@@ -68,6 +68,39 @@ header {
   width: 100%;
 }
 
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-top: 0.75em;
+}
+
+.nav__list--primary {
+  margin-bottom: 2em;
+}
+
+.nav__link {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.65;
+}
+
+.nav__link--button {
+  padding: 0.5em 1.5em;
+  background-color: white;
+  color: #23424a;
+  border-radius: 2em;
+}
+
 .nav-toggle {
   cursor: pointer;
   border: 0;
